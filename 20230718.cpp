@@ -5,6 +5,8 @@
 #include <chrono>
 using namespace std;
 
+// 実行コマンド例　if ($?) { g++ -O3 20230718.cpp -o 20230718 } ; if ($?) { .\20230718 }
+
 int main() {
     const long long division = 1000; // 1年の分割数
     const long long years = 1000; // 回す年数
