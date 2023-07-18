@@ -26,14 +26,15 @@ int main() {
 
     auto start = chrono::high_resolution_clock::now();//実行時間計測
     int bankruptcy = 0;
-    vector<int> numbers;
+    //vector<int> numbers;
     for (int i = 0; i < trials; ++i) {
         long long money = pocket;
         bool go_next = false;
         for (int j = 0; j < years; ++j) {
             int break_count = poisson(count);
+            vector<int> numbers(division);
             if (break_count > 0){
-                numbers.reserve(division);
+                //numbers.reserve(division);
                 vector<int> break_time(break_count);
                 for (int k = 0; k < division; ++k) {
                     numbers[k] = k;
